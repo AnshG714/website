@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .cornell-info {
@@ -11,6 +12,15 @@
 
 .em {
   font-weight: 500;
+}
+
+.edulinks {
+  color: #ae17d4;
+}
+
+.edulinks:link {
+  text-decoration: none;
+  color: green;
 }
 
 .cornell-logo {
@@ -24,5 +34,9 @@
     height: 100px;
     width: 100px;
     border-radius: 50px;
+  }
+
+  .cornell-info {
+    width: 100%;
   }
 }

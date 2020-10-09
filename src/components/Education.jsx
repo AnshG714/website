@@ -9,19 +9,28 @@ export default function Education() {
         <p className="em">Expected Graduation: December 2021</p>
         <p>
           On campus, I'm a part of{" "}
-          <a href="https://www.cornelldti.org">
+          <a className="edulinks" href="https://www.cornelldti.org">
             Cornell Design and Tech Initiative
           </a>
           , and I've TA'd several classes before, including{" "}
-          <a href="https://www.cs.cornell.edu/courses/cs1110/2019fa/">
+          <a
+            className="edulinks"
+            href="https://www.cs.cornell.edu/courses/cs1110/2019fa/"
+          >
             Introduction to Computer Science
           </a>
           ,{" "}
-          <a href="https://www.cs.cornell.edu/courses/cs4820/2020sp/">
+          <a
+            className="edulinks"
+            href="https://www.cs.cornell.edu/courses/cs4820/2020sp/"
+          >
             Analysis of Algorithms
           </a>{" "}
           and{" "}
-          <a href="https://www.cs.cornell.edu/courses/cs3110/2020fa/">
+          <a
+            className="edulinks"
+            href="https://www.cs.cornell.edu/courses/cs3110/2020fa/"
+          >
             Functional Programming and Data Structures
           </a>
         </p>

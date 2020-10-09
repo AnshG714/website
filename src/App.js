@@ -4,15 +4,17 @@ import "./App.css";
 import About from "./components/About";
 import Section from "./components/SectionContainer";
 import Education from "./components/Education";
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <About />
-      {/* <Section title="Education">
+      <Section title="Education">
         <Education />
-      </Section> */}
+      </Section>
+      <ProjectCard title="test" projectImage="mypic.JPG" githubLink="aa" />
     </div>
   );
 }
