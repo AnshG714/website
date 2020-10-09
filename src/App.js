@@ -14,7 +14,12 @@ function App() {
       <Section title="Education">
         <Education />
       </Section>
-      <ProjectCard title="test" projectImage="mypic.JPG" githubLink="aa" />
+      <ProjectCard
+        title="test"
+        projectImage="mypic.JPG"
+        githubLink="aa"
+        otherLink="a"
+      />
     </div>
   );
 }

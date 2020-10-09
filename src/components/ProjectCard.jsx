@@ -9,7 +9,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="card-container shadowed">
-      <h1>{title}</h1>
+      <h2 className="project-title">{title}</h2>
       <img
         className="project-picture"
         src={require(`../assets/${projectImage}`)}
