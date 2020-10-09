@@ -8,15 +8,27 @@ export default function ProjectCard({
   otherLink,
 }) {
   return (
-    <div className="card-container">
+    <div className="card-container shadowed">
       <h1>{title}</h1>
-      <img src={require(`../assets/${projectImage}`)} alt={projectImage} />
+      <img
+        className="project-picture"
+        src={require(`../assets/${projectImage}`)}
+        alt={projectImage}
+      />
       <div className="links-container">
         {githubLink && (
-          <img src={require("../assets/github.png")} alt="GitHub logo" />
+          <img
+            className="link"
+            src={require("../assets/github.png")}
+            alt="GitHub logo"
+          />
         )}
         {otherLink && (
-          <img src={require("../assets/link.png")} alt="link icon" />
+          <img
+            className="link"
+            src={require("../assets/link.png")}
+            alt="link icon"
+          />
         )}
       </div>
     </div>

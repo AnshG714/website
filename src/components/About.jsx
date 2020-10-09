@@ -22,7 +22,7 @@ export default function About() {
             {(props) => (
               <img
                 style={props}
-                className="prof-pic"
+                className="prof-pic shadowed"
                 src={require("../assets/mypic.JPG")}
                 alt="profile_pic"
               />
@@ -34,7 +34,7 @@ export default function About() {
             config={{ duration: 150, delay: 800, tension: 300 }}
           >
             {(props) => (
-              <div style={props} className="about-info-container">
+              <div style={props} className="about-info-container shadowed">
                 {aboutDesc}
               </div>
             )}

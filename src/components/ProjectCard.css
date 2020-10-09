@@ -1,5 +1,19 @@
 .card-container {
-  height: 500px;
-  width: 500px;
-  border-style: solid;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.project-picture {
+  height: 200px;
+  width: 300px;
+}
+
+.links-container {
+  display: flex;
+  padding: 10px;
+}
+
+.link {
+  height: 50px;
+  width: 50px;
 }
