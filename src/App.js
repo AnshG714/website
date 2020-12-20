@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/NavBar";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
 import Section from "./components/SectionContainer";
 import Education from "./components/Education";
