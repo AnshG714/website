@@ -1,11 +1,18 @@
 .card-container {
-  width: 300px;
+  width: 250px;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  margin: 20px;
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .project-picture {
   height: 200px;
-  width: 300px;
+  width: 100%;
 }
 
 .project-title {

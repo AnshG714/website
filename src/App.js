@@ -4,7 +4,7 @@ import "./App.css";
 import About from "./components/About";
 import Section from "./components/SectionContainer";
 import Education from "./components/Education";
-import ProjectCard from "./components/ProjectCard";
+import ProjectContainer from "./components/ProjectContainer";
 
 function App() {
   return (
@@ -14,12 +14,7 @@ function App() {
       <Section title="Education">
         <Education />
       </Section>
-      <ProjectCard
-        title="test"
-        projectImage="mypic.JPG"
-        githubLink="aa"
-        otherLink="a"
-      />
+      <ProjectContainer projects={Array(8).fill(8)} />
     </div>
   );
 }

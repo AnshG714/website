@@ -28,6 +28,7 @@ export default function ProjectCard({
             className="link"
             src={require("../assets/link.png")}
             alt="link icon"
+            style={{ marginLeft: 20 }}
           />
         )}
       </div>
