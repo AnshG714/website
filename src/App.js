@@ -6,7 +6,7 @@ import About from "./components/About";
 import Section from "./components/SectionContainer";
 import Education from "./components/Education";
 import ProjectContainer from "./components/ProjectContainer";
-import ProfessionalExperienceCard from "./components/ProfessionalExperienceCard";
+import ProfessionalExperienceContainer from "./components/ProfessionalExperienceContainer";
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
       <Section title="Projects">
         <ProjectContainer projects={Array(8).fill(8)} />
       </Section>
-      <Section>
-        <ProfessionalExperienceCard />
+      <Section title="Work Experience">
+        <ProfessionalExperienceContainer experiences={Array(3).fill(8)} />
       </Section>
     </div>
   );

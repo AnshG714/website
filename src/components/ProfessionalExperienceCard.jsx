@@ -4,7 +4,6 @@ import "./ProfessionalExperienceCard.css";
 export default function ProfessionalExperienceCard({
   startDate,
   endDate,
-  companyImage,
   companyName,
   role,
 }) {
@@ -14,7 +13,7 @@ export default function ProfessionalExperienceCard({
         <img
           className="company-logo"
           alt={companyName}
-          src={require("../assets/Facebook.png")}
+          src={require(`../assets/${companyName}.png`)}
         />
       </div>
       <div className="company-role centered">

@@ -1,0 +1,19 @@
+.connector {
+  position: relative;
+  z-index: -1;
+}
+
+.gray-bar {
+  background-color: lightgrey;
+  height: 80px;
+  width: 6px;
+}
+
+.gray-circle {
+  background-color: lightgrey;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  position: relative;
+  right: 13px;
+}
