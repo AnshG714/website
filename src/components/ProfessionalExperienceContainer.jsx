@@ -21,7 +21,7 @@ export default function ProfessionalExperienceContainer({ experiences }) {
           return (
             <>
               {renderGrayBar()}
-              <ProfessionalExperienceCard companyName="Facebook" />
+              <ProfessionalExperienceCard companyName="MLH" />
             </>
           );
         }

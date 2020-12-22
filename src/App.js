@@ -20,7 +20,7 @@ function App() {
         <ProjectContainer projects={Array(8).fill(8)} />
       </Section>
       <Section title="Work Experience">
-        <ProfessionalExperienceContainer experiences={Array(3).fill(8)} />
+        <ProfessionalExperienceContainer experiences={Array(5).fill(8)} />
       </Section>
     </div>
   );
