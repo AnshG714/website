@@ -1,7 +1,21 @@
 import React, { useState } from "react";
 import "./ProjectCard.css";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+
+function renderTechLogos(techImageNames) {
+  return (
+    <div className="tech-stack-container">
+      {techImageNames.map((techImageName) => (
+        <img
+          className="tech-logo"
+          src={require(`../assets/tech_logos/${techImageName}`)}
+          alt={techImageName}
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function ProjectCard({
   title,
   projectImage,
@@ -43,13 +57,11 @@ export default function ProjectCard({
 
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title style={{ backgroundColor: "red", width: "100%" }}>
+            {title}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary">Close</Button>
-          <Button variant="primary">Save Changes</Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

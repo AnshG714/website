@@ -1,15 +1,10 @@
 .navbar {
   background-color: #060696;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
   height: 20%;
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: flex-end;
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #060696;

@@ -1,0 +1,29 @@
+.project-card-container {
+  height: 200px;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.work-time-container {
+  flex: 0.25;
+}
+
+.company-logo-container {
+  flex: 0.4;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.company-logo {
+  width: 100%;
+}
+
+.company-role {
+  flex: 0.3;
+}
+
+.project-card-container p {
+  font-size: 1.5rem;
+}

@@ -5,7 +5,7 @@ export default function SectionContainer({ title, children }) {
   return (
     <div className="section-container">
       <h1 className="title">{title}</h1>
-      {children}
+      <div className="centered">{children}</div>
     </div>
   );
 }
