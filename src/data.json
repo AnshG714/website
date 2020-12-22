@@ -1,0 +1,127 @@
+{
+  "aboutDesc": "Hey there, seems like I have your attention 😃 My name is Ansh Godha, and I’m a rising senior studying Computer Science at Cornell University. I’m particularly invested in developing technology for social impact, and if your company has that as one of its core values, I’d be very happy to talk! As a developer, I love working with different technologies and frameworks. I have experience with native (iOS) and cross-platform (React Native) mobile development; I’m also particularly interested in backend development, and I have experience with Firestore and PostgreSQL. I’ve also worked with GCP on multiple projects before. These days, I’m learning more about applications of Computer Vision/Augmented Reality and blockchain development. If your company has any work involving these fields, please do reach out to me!",
+  "workExperience": [
+    {
+      "company": "Facebook",
+      "role": "Software Engineering Intern",
+      "startDate": "May 2021",
+      "endDate": "Aug 2021",
+      "desc": "Stay tuned! Description will be coming soon 😉"
+    },
+    {
+      "company": "MLH",
+      "role": "Open Source Software Engineer",
+      "startDate": "May 2020",
+      "endDate": "Aug 2020",
+      "desc": "I participated in the inaugural batch of the MLH fellowship, where I contributed to open source software. I implemented end-to-end tests for Facebook's React Native framework using Detox and Jest. This was my first time carrying out UI testing! I also got a deeper dive into integration testing, and got to know about snapshot testing! I also migrated the RNTester app (React Native's core testing mechanism) and debugged Xcode build configurations. To be completely honest, this was perhaps the most painful things I've ever done.  Lastly, I redesigned the app with an improved UI, with a team of 5 to make it more suitable for React Native's new component library, in collaboration with Facebook's Core RN Development team. I used JavaScript in conjunction with the Flow framework. Types in plain JavaScript are nice :)",
+      "extraLinks": [
+        {
+          "name": "MLH Fellowship",
+          "link": "https://fellowship.mlh.io"
+        },
+        {
+          "name": "RNTester on GitHub",
+          "link": "https://github.com/facebook/react-native/tree/master/packages/rn-tester"
+        },
+        {
+          "name": "Learn more about React Native",
+          "link": "https://reactnative.dev"
+        }
+      ]
+    },
+    {
+      "company": "WITS",
+      "role": "Software Engineering Intern",
+      "startDate": "May 2019",
+      "endDate": "Aug 2019",
+      "desc": "At WITS, I developed/protoyped an app called 'TakeMeHome', which was inspired by safety concerns in my city. TakeMeHome allows you to make sharing groups, and track real time locations of everyone in that group. You can also quickly select exactly who you want to share your location with, which becomes a bit challenging when using apps like 'Find My Friends' and 'SnapMaps'. TakeMeHome was also designed to circumvent the problem of clustered map views when there are too many people sharing their location. I used Swift to develop the iOS app, and used Firebase Real-time database to deal with the real-time constraints.",
+      "extraLinks": [
+        {
+          "name": "WITS Interactive",
+          "link": "https://www.wits-interactive.com"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "http-dsl",
+      "projectImage": "programming",
+      "techStack": ["TypeScript", "Firebase", "Expressjs"],
+      "githubLink": "https://github.com/chansen424/http-dsl",
+      "desc": "We built our own domain-specific programming language 🤯. As a part of the final project for my programming languages class, we decided to build a language that makes it easy to make API requests through a cURL-like interface. However, our language goes boying cURL in that we allow users to save intermediary responses/values in variables, and construct JSONs through constructs built within http-dsl which they can, in turn, use for other HTTP requests. We support data structures like strings, ints, arrays and JSONs (including nested JSONs); users can add custom headers to requests; they can read protected variables through an environment file (this is useful for storing API keys!). We also integrated File I/O support! While this is a prototyped language, you can still build the language from source and toy around with it. We used antlr4 for building the grammar, TypeScript to build the interpreter and Firebase to build our own internal testing API.",
+      "supplementaryImage": "code-snippet"
+    },
+    {
+      "name": "Flux",
+      "projectImage": "Flux",
+      "supplementaryImage": "flux-feature",
+      "techStack": ["Swift", "Firebase", "JavaScript", "TypeScript", "GCP"],
+      "githubLink": "https://github.com/orgs/cornell-dti/teams/flux/repositories",
+      "otherLink": "https://apps.apple.com/in/app/flux-skip-the-crowd/id1454265033",
+      "desc": "Do you ever go to a dining hall, only to find out its over capacity and there's no place to eat? Did you ever feel stressed about getting to a midterm, and rushed to a cafe only to find out it's going to take you over an hour to get food there? More importantly, amidst this COVID-19 pandemic, did you ever need to find out how crowded a dining hall is? Flux is here for you. Flux is an app built for Cornell students and shows you the real-time crowdedness of eateries on Cornell's campus through an intuitive, beautiful UI. On Flux, I am primarily an iOS developer. Flux is an app built on top of the IGListKit framework. I've added new functionality like the ability to see menus offered by every dining hall. This update got pushed to over 300 devices. I primarily worked using Swift. I've also worked on our backend repository. Flux will expand to fitness centers soon, and I augmented our REST API to include endpoints that will fetch/insert data to and from our Firestore database. I am currently building wait-time functionality and the core algorithm for dining halls using Node and Google Cloud Functions. Now, you can see how much time you’ll have to wait at any dining hall! My backend work involved writing code in JavaScript and TypeScript. As of December 2020, I am the acting Technical Project Manager (TPM) of Flux."
+    },
+    {
+      "name": "HackOurCampus",
+      "projectImage": "hoc",
+      "techStack": [
+        "JavaScript",
+        "Reactjs",
+        "React Native",
+        "Firebase",
+        "Expressjs"
+      ],
+      "githubLink": "https://github.com/HackOurCampus",
+      "otherLink": "https://hackourcampus.com",
+      "desc": "I co-organized and led a completely virtualized hackathon for Cornellians to address the college's radical shift in instruction. HackOurCampus recorded over 300 attendees, and I managed operations for 12 workshops, facilitated mentorship events and socials, and taught workshops on React Native and Firebase. I also built us a cute lil’ Discord bot that helped manage some of our logistics, and gave our dear participants some company 🤗",
+      "extraLinks": [
+        {
+          "name": "Chronicle Article 🤩",
+          "link": "https://news.cornell.edu/stories/2020/08/quarantine-hackathon-aims-improve-student-life"
+        }
+      ]
+    },
+    {
+      "name": "Qly Management, LLC",
+      "projectImage": "Qly",
+      "techStack": ["React Native", "Reactjs", "Firebase", "Expressjs"],
+      "desc": "I was the lead developer for Qly Management, a reservation and queuing system to facilitate the reopening of retail and other brick-and-mortar stores after the COVID-19 pandemic by optimizing customer flow through stores. The app essentially allowed people to book 'spots' in lines for these stores. I developed mobile apps and a basic website for customers and retail clients in React and React Native, prototyped the RESTful, JWT-protected backend, and oversaw migration to MongoDB for scalability. I'm not allowed to share links due to our NDA agreements."
+    },
+    {
+      "name": "Codenames +",
+      "projectImage": "spy",
+      "supplementaryImage": "codenames-gameplay",
+      "techStack": ["Reactjs", "Firebase", "Expressjs"],
+      "githubLink": "https://github.com/AnshG714/CodeNames-",
+      "otherLink": "https://codenames-plus.web.app/",
+      "desc": "I built a more customizable version of the popular game Codenames with a friend. This version features the ability to add custom words as well! Warning: This version is slightly buggy, bug fixes to follow soon!"
+    },
+    {
+      "name": "Cornell Notifs",
+      "projectImage": "Notifs",
+      "techStack": ["Reactjs", "Firebase", "Expressjs"],
+      "githubLink": "https://github.com/hanywang2/curly-barnacle",
+      "desc": "I ideated and co-created cornellnotifs.com (taken offline because of Cornell administration requests), a crowdsourced website allowing students to easily visit their online classes by sending them email reminders with links to their Zoom class when their class is about to start. We acquired over 50 users spread across over 120 class sections. To implement this project, we web-scraped every student's schedule using Cheerio.js, and used React, Firestore, Firebase Functions and the Sendgrid API client to enable emails. I also integrated the Google Sheets API to simplify the way we verify crowdsourced data.",
+      "extraLinks": [
+        {
+          "name": "The Cornell Daily Sun recognizes our efforts!",
+          "link": "https://cornellsun.com/2020/04/23/pandemic-inspires-software-engineering-students-to-streamline-remote-learning/"
+        }
+      ]
+    },
+    {
+      "name": "OCamlMonoDeal",
+      "projectImage": "mr-monopoly",
+      "techStack": ["OCaml"],
+      "githubLink": "https://github.com/AnshG714/monopoly-deal",
+      "desc": "I implemented Monopoly Deal, one of my favorite games ever, in OCaml as a text-based command line game. This was implemented wholly in OCaml, which was challening owing to its functional nature. The game allows for up to 5 players, and features colorful ASCII-based displays of different monopoly deal cards. We also allow users to use action cards, which is one of the most fun parts of Monopoly Deal."
+    },
+    {
+      "name": "PriceTag",
+      "projectImage": "bill",
+      "techStack": ["Python", "OpenCV"],
+      "githubLink": "https://github.com/AnshG714/HackNYU",
+      "desc": "Do you remember the pain of going to a restaurant or grocery store and then splitting the cheque? I bet you do. As a part of HackNYU (my first ever hackathon!), I prototyped an extension for Venmo that allows users to scan a receipt, and then simply tag people's Venmo handles on different price tags, thus charging them automatically. Splitting the cheque was never so easy! We used OpenCV in conjunction with Google Vision for receipt scanning functionality, and used PyTesseract to make a simple desktop GUI for demoing purposes."
+    }
+  ]
+}

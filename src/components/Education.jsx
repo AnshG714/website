@@ -37,7 +37,7 @@ export default function Education() {
       </div>
       <img
         className="cornell-logo"
-        src={require("../assets/cornell-logo.png")}
+        src={require("../assets/Cornell.png")}
         alt="Cornell Logo"
       />
     </div>

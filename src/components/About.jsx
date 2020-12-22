@@ -2,9 +2,8 @@ import React from "react";
 import "./About.css";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import { Spring } from "react-spring/renderprops";
-import { aboutDesc } from "../data";
 
-export default function About() {
+export default function About({ desc }) {
   const { width } = useWindowDimensions();
   return (
     <Spring
@@ -35,7 +34,7 @@ export default function About() {
           >
             {(props) => (
               <div style={props} className="about-info-container shadowed">
-                {aboutDesc}
+                {desc}
               </div>
             )}
           </Spring>

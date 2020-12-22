@@ -8,7 +8,7 @@ function renderTechLogos(techImageNames) {
       {techImageNames.map((techImageName) => (
         <img
           className="tech-logo"
-          src={require(`../assets/tech_logos/${techImageName}`)}
+          src={require(`../assets/tech_logos/${techImageName}.png`)}
           alt={techImageName}
         />
       ))}
@@ -17,10 +17,13 @@ function renderTechLogos(techImageNames) {
 }
 
 export default function ProjectCard({
-  title,
+  name,
   projectImage,
   githubLink,
   otherLink,
+  desc,
+  supplementaryImage,
+  techStack,
 }) {
   const [showModal, setShowModal] = useState(false);
 
@@ -30,10 +33,10 @@ export default function ProjectCard({
         className="card-container shadowed"
         onClick={() => setShowModal(true)}
       >
-        <h2 className="project-title">{title}</h2>
+        <h4 className="project-title">{name || "Undefined Name"}</h4>
         <img
           className="project-picture"
-          src={require(`../assets/${projectImage}`)}
+          src={require(`../assets/projects-supplements/${projectImage}.png`)}
           alt={projectImage}
         />
         <div className="links-container">
@@ -55,13 +58,29 @@ export default function ProjectCard({
         </div>
       </div>
 
-      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+      <Modal
+        size="lg"
+        dialogClassName="modal-90w"
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        centered
+      >
         <Modal.Header closeButton>
-          <Modal.Title style={{ backgroundColor: "red", width: "100%" }}>
-            {title}
+          <Modal.Title style={{ width: "100%" }}>
+            <h1>{name}</h1>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          {renderTechLogos(techStack)}
+          <p>{desc}</p>
+          {supplementaryImage && (
+            <img
+              className="supplementary-img"
+              src={require(`../assets/projects-supplements/${supplementaryImage}.png`)}
+              alt={supplementaryImage}
+            />
+          )}
+        </Modal.Body>
       </Modal>
     </>
   );

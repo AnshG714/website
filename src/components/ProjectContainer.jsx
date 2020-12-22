@@ -6,14 +6,8 @@ export default function ProjectsContainer({ projects }) {
   return (
     <div className="project-container">
       {projects.map((p) => {
-        return (
-          <ProjectCard
-            title="test"
-            projectImage="mypic.JPG"
-            githubLink="aa"
-            otherLink="a"
-          />
-        );
+        console.log(p);
+        return <ProjectCard {...p} />;
       })}
     </div>
   );
