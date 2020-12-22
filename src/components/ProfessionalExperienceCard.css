@@ -1,27 +1,25 @@
 .project-card-container {
   height: 200px;
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
-}
-
-.work-time-container {
-  flex: 0.25;
+  padding: 20px;
 }
 
 .company-logo-container {
-  flex: 0.4;
+  flex: 0.6;
   overflow: hidden;
   margin: 0 5px;
 }
 
 .company-logo {
-  width: 100%;
+  width: 70%;
 }
 
 .company-role {
-  flex: 0.3;
+  flex: 0.4;
+  flex-direction: column;
 }
 
 .project-card-container p {
