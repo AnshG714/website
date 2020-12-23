@@ -5,9 +5,11 @@ import Section from "./components/SectionContainer";
 import Education from "./components/Education";
 import ProjectContainer from "./components/ProjectContainer";
 import ProfessionalExperienceContainer from "./components/ProfessionalExperienceContainer";
+import Contact from "./components/Contact";
 import * as data from "./data.json";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,9 @@ function App() {
       </Section>
       <Section title="Projects">
         <ProjectContainer projects={data.projects} />
+      </Section>
+      <Section title="Contact Me">
+        <Contact />
       </Section>
     </div>
   );

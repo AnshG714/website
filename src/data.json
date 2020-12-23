@@ -37,7 +37,7 @@
       "desc": "At WITS, I developed/protoyped an app called 'TakeMeHome', which was inspired by safety concerns in my city. TakeMeHome allows you to make sharing groups, and track real time locations of everyone in that group. You can also quickly select exactly who you want to share your location with, which becomes a bit challenging when using apps like 'Find My Friends' and 'SnapMaps'. TakeMeHome was also designed to circumvent the problem of clustered map views when there are too many people sharing their location. I used Swift to develop the iOS app, and used Firebase Real-time database to deal with the real-time constraints.",
       "extraLinks": [
         {
-          "name": "WITS Interactive",
+          "name": "Learn more about WITS Interactive",
           "link": "https://www.wits-interactive.com"
         }
       ]
