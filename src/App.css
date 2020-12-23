@@ -16,3 +16,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.small {
+  height: 60px;
+  width: auto;
+  margin-right: 20px;
+}

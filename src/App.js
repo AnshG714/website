@@ -16,11 +16,11 @@ function App() {
       <Section title="Education">
         <Education />
       </Section>
-      <Section title="Projects">
-        <ProjectContainer projects={data.projects} />
-      </Section>
       <Section title="Work Experience">
         <ProfessionalExperienceContainer experiences={data.workExperience} />
+      </Section>
+      <Section title="Projects">
+        <ProjectContainer projects={data.projects} />
       </Section>
     </div>
   );
