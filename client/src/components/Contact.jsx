@@ -46,11 +46,7 @@ export default function Contact() {
             value={msg}
           />
         </Form.Group>
-        <Button
-          variant="primary"
-          type="submit"
-          // onClick={() => console.log("Submit pressed")}
-        >
+        <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
