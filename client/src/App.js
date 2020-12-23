@@ -25,6 +25,9 @@ function App() {
         <ProjectContainer projects={data.projects} />
       </Section>
       <Section title="Contact Me">
+        <p style={{ fontSize: "0.9rem", fontColor: "lightgray" }}>
+          I'm friendly, I swear
+        </p>
         <Contact />
       </Section>
     </div>
