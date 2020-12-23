@@ -24,6 +24,7 @@ export default function ProjectCard({
   desc,
   supplementaryImage,
   techStack,
+  extraLinks,
 }) {
   const [showModal, setShowModal] = useState(false);
 
@@ -41,19 +42,23 @@ export default function ProjectCard({
         />
         <div className="links-container">
           {githubLink && (
-            <img
-              className="link"
-              src={require("../assets/github.png")}
-              alt="GitHub logo"
-            />
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <img
+                className="link"
+                src={require("../assets/github.png")}
+                alt="GitHub logo"
+              />
+            </a>
           )}
           {otherLink && (
-            <img
-              className="link"
-              src={require("../assets/link.png")}
-              alt="link icon"
-              style={{ marginLeft: 20 }}
-            />
+            <a href={otherLink} target="_blank" rel="noopener noreferrer">
+              <img
+                className="link"
+                src={require("../assets/link.png")}
+                alt="link icon"
+                style={{ marginLeft: 20 }}
+              />
+            </a>
           )}
         </div>
       </div>
@@ -67,7 +72,14 @@ export default function ProjectCard({
       >
         <Modal.Header closeButton>
           <Modal.Title style={{ width: "100%" }}>
-            <h1>{name}</h1>
+            <div style={{ display: "flex" }}>
+              <img
+                className="small"
+                src={require(`../assets/projects-supplements/${projectImage}.png`)}
+                alt={projectImage}
+              />
+              <h1>{name}</h1>
+            </div>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -79,6 +91,20 @@ export default function ProjectCard({
               src={require(`../assets/projects-supplements/${supplementaryImage}.png`)}
               alt={supplementaryImage}
             />
+          )}
+          {extraLinks && (
+            <>
+              <p>Other references:</p>
+              <ul>
+                {extraLinks.map(({ name, link }) => (
+                  <li>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
           )}
         </Modal.Body>
       </Modal>

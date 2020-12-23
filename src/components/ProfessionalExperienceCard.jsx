@@ -4,16 +4,18 @@ import "./ProfessionalExperienceCard.css";
 export default function ProfessionalExperienceCard({
   startDate,
   endDate,
-  companyName,
+  company,
   role,
+  desc,
+  extraLinks,
 }) {
   return (
     <div className="project-card-container shadowed">
       <div className="company-logo-container centered">
         <img
           className="company-logo"
-          alt={companyName}
-          src={require(`../assets/${companyName}.png`)}
+          alt={company}
+          src={require(`../assets/${company}.png`)}
         />
       </div>
       <div className="company-role centered">

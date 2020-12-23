@@ -16,12 +16,12 @@ export default function ProfessionalExperienceContainer({ experiences }) {
     <div className="centered" style={{ flexDirection: "column" }}>
       {experiences.map((experience, index) => {
         if (index === 0) {
-          return <ProfessionalExperienceCard companyName="Facebook" />;
+          return <ProfessionalExperienceCard {...experience} />;
         } else {
           return (
             <>
               {renderGrayBar()}
-              <ProfessionalExperienceCard companyName="MLH" />
+              <ProfessionalExperienceCard {...experience} />
             </>
           );
         }
