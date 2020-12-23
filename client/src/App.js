@@ -14,17 +14,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <About desc={data.aboutDesc} />
-      <Section title="Education">
+      <About id="about" desc={data.aboutDesc} />
+      <Section id="education" title="Education">
         <Education />
       </Section>
-      <Section title="Work Experience">
+      <Section id="workexp" title="Work Experience">
         <ProfessionalExperienceContainer experiences={data.workExperience} />
       </Section>
-      <Section title="Projects">
+      <Section id="projects" title="Projects">
         <ProjectContainer projects={data.projects} />
       </Section>
-      <Section title="Contact Me">
+      <Section id="contact" title="Contact Me">
         <p style={{ fontSize: "0.9rem", fontColor: "lightgray" }}>
           I'm friendly, I swear
         </p>

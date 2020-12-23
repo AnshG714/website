@@ -1,13 +1,9 @@
 .navbar {
-  background-color: #060696;
-  position: sticky;
-  position: -webkit-sticky;
+  background-color: #060693;
+  position: fixed;
   top: 0;
-  z-index: 10;
-  height: 20%;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #060696;
+  left: 0;
+  right: 0;
 }
 
 .navitems {
@@ -22,6 +18,13 @@
   padding: 0 20px;
   font-size: 2rem;
   color: white;
+  transition: all 0.3s ease-out;
+}
+
+.navitems li:hover {
+  transform: scale(1.15);
+  color: orange;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

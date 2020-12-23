@@ -1,9 +1,9 @@
 import React from "react";
 import "./SectionContainer.css";
 
-export default function SectionContainer({ title, children }) {
+export default function SectionContainer({ title, id, children }) {
   return (
-    <div className="section-container">
+    <div id={id} className="section-container">
       <h1 className="title">{title}</h1>
       <div className="centered">{children}</div>
     </div>

@@ -1,14 +1,32 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <div className="navbar">
       <ul className="navitems">
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <Link activeClass="active" to="about" spy={true} smooth={true}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="workexp" spy={true} smooth={true}>
+            Work Experience
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" spy={true} smooth={true}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" spy={true} smooth={true}>
+            Contact
+          </Link>
+        </li>
       </ul>
-    </nav>
+    </div>
   );
 }
