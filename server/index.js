@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5000;
 
+// Email handler
 app.post("/send", (req, res) => {
   const { name, email, message } = req.body;
   send(name, email, message, (bool) => {
