@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
 import Toast from "react-bootstrap/Toast";
 import * as axios from "axios";
+import "./Contact.css";
 
 export default function Contact() {
   const onFormSubmit = (e) => {
@@ -65,7 +66,7 @@ export default function Contact() {
           />
         </Form.Group>
         <Button
-          style={{ backgroundColor: loading && "lightblue", width: "20%" }}
+          style={{ backgroundColor: loading && "lightblue" }}
           variant="primary"
           type="submit"
           disabled={loading}

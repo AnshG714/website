@@ -29,13 +29,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
-    display: normal;
-    justify-content: center;
+  .navitems {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
-  li {
-    display: block;
+  .navitems li {
     font-size: 1.5rem;
     padding: 0;
   }
