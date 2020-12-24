@@ -19,7 +19,7 @@ app.post("/send", (req, res) => {
 
 if (process.env.NODE_ENV === "production") {
   // Serve all static files
-  app.use(express.static(path.join(__dirname, "client/build")));
+  app.use(express.static(path.join(__dirname, "..", "client/build")));
 
   // Route requests to CRA
   app.get("*", (req, res) => {
