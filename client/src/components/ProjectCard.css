@@ -69,4 +69,8 @@
   .tech-stack-container > * {
     margin: 1em 0;
   }
+
+  .tech-logo {
+    height: 80px;
+  }
 }
