@@ -48,6 +48,7 @@
   align-items: stretch;
   justify-content: space-around;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .tech-logo {
@@ -59,5 +60,13 @@
     display: inline;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .tech-stack-container {
+    margin-bottom: 20px;
+  }
+
+  .tech-stack-container > * {
+    margin: 1em 0;
   }
 }

@@ -43,6 +43,7 @@ export default function Contact() {
             onChange={(e) => setName(e.target.value)}
             value={name}
             required
+            className="form-entry"
           />
         </Form.Group>
         <Form.Group controlId="formGroupEmail">
