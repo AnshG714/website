@@ -72,7 +72,7 @@ export default function ProjectCard({
       >
         <Modal.Header closeButton>
           <Modal.Title style={{ width: "100%" }}>
-            <div style={{ display: "flex" }}>
+            <div className="project-header">
               <img
                 className="small"
                 src={require(`../assets/projects-supplements/${projectImage}.png`)}

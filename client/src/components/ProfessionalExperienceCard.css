@@ -32,3 +32,26 @@
 .project-card-container p {
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .project-card-container {
+    width: 80%;
+    display: inline;
+    height: auto;
+  }
+
+  .company-logo {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .company-role {
+    display: inline;
+    margin-top: 10px;
+  }
+
+  .company-role > p {
+    font-size: 1em;
+    margin: 0;
+  }
+}
