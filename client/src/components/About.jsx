@@ -3,7 +3,7 @@ import "./About.css";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import { Spring } from "react-spring/renderprops";
 
-export default function About({ desc }) {
+export function About({ desc }) {
   const { width } = useWindowDimensions();
   return (
     <Spring
@@ -41,5 +41,18 @@ export default function About({ desc }) {
         </div>
       )}
     </Spring>
+  );
+}
+
+export default function About2({ desc }) {
+  return (
+    <div className="about-container">
+      <img
+        className="prof-pic shadowed"
+        src={require("../assets/mypic.JPG")}
+        alt="profile_pic"
+      />
+      <div className="about-info-container shadowed">{desc}</div>
+    </div>
   );
 }

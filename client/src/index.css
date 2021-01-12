@@ -14,7 +14,7 @@ code {
 html,
 body {
   width: 100vw;
-  overflow-x: hidden;
+  height: 300vh;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */

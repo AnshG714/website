@@ -5,8 +5,9 @@ import Modal from "react-bootstrap/Modal";
 function renderTechLogos(techImageNames) {
   return (
     <div className="tech-stack-container">
-      {techImageNames.map((techImageName) => (
+      {techImageNames.map((techImageName, index) => (
         <img
+          key={index}
           className="tech-logo"
           src={require(`../assets/tech_logos/${techImageName}.png`)}
           alt={techImageName}
@@ -97,7 +98,7 @@ export default function ProjectCard({
               <p>Other references:</p>
               <ul>
                 {extraLinks.map(({ name, link }) => (
-                  <li>
+                  <li key={link}>
                     <a href={link} target="_blank" rel="noopener noreferrer">
                       {name}
                     </a>

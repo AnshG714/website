@@ -58,7 +58,7 @@ export default function ProfessionalExperienceCard({
               <p>Other references:</p>
               <ul>
                 {extraLinks.map(({ name, link }) => (
-                  <li>
+                  <li key={link}>
                     <a href={link} target="_blank" rel="noopener noreferrer">
                       {name}
                     </a>

@@ -2,9 +2,9 @@ import React from "react";
 import ProfessionalExperienceCard from "./ProfessionalExperienceCard.jsx";
 import "./ProfessionalExperienceContainer.css";
 
-function renderGrayBar() {
+function renderGrayBar(index) {
   return (
-    <div className="connector centered">
+    <div className="connector centered" key={`${index}_`}>
       <div className="gray-bar" />
       <div className="gray-circle" />
     </div>
@@ -16,12 +16,12 @@ export default function ProfessionalExperienceContainer({ experiences }) {
     <div className="centered" style={{ flexDirection: "column" }}>
       {experiences.map((experience, index) => {
         if (index === 0) {
-          return <ProfessionalExperienceCard {...experience} />;
+          return <ProfessionalExperienceCard key={index} {...experience} />;
         } else {
           return (
             <>
-              {renderGrayBar()}
-              <ProfessionalExperienceCard {...experience} />
+              {renderGrayBar(index)}
+              <ProfessionalExperienceCard key={index} {...experience} />
             </>
           );
         }

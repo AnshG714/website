@@ -12,25 +12,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <About id="about" desc={data.aboutDesc} />
-      <Section id="education" title="Education">
-        <Education />
-      </Section>
-      <Section id="workexp" title="Work Experience">
-        <ProfessionalExperienceContainer experiences={data.workExperience} />
-      </Section>
-      <Section id="projects" title="Projects">
-        <ProjectContainer projects={data.projects} />
-      </Section>
-      <Section id="contact" title="Contact Me">
-        <p style={{ fontSize: "0.9rem", fontColor: "lightgray" }}>
-          I'm friendly, I swear
-        </p>
-        <Contact />
-      </Section>
-    </div>
+      <div className="App">
+        <About id="about" desc={data.aboutDesc} />
+        <Section id="education" title="Education">
+          <Education />
+        </Section>
+        <Section id="workexp" title="Work Experience">
+          <ProfessionalExperienceContainer experiences={data.workExperience} />
+        </Section>
+        <Section id="projects" title="Projects">
+          <ProjectContainer projects={data.projects} />
+        </Section>
+        <Section id="contact" title="Contact Me">
+          <p style={{ fontSize: "0.9rem", fontColor: "lightgray" }}>
+            I'm friendly, I swear
+          </p>
+          <Contact />
+        </Section>
+      </div>
+    </>
   );
 }
 
