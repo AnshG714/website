@@ -4,9 +4,9 @@
     {
       "company": "Facebook",
       "role": "Software Engineering Intern",
-      "startDate": "Aug 2021",
-      "endDate": "Dec 2021",
-      "desc": "Stay tuned! Description will be coming soon 😉"
+      "startDate": "May 2021",
+      "endDate": "Aug 2021",
+      "desc": "At Facebook, I was a part of the WhatsApp Messaging Infrastructure team, and my project revolved around push notifications. The project was based in a distributed environment, where I used Erlang to carry out my tasks. I implemented metric logging to allow the Platform Services team to visualize granular per-platform (think Messenger iOS, Instagram Android, etc.) push notification use cases and success rates, which was useful when debugging issues such as why some platforms were recording excesively high push notification count. Furthermore, WhatsApp's push notification pipeline is very extensive, and there also needs to be different handling for different systems (Apple and Android have different handling, for instance). I wrote some code to use to these different handlers, instead of using logic mashed into one file. Lastly, I switched the underlying push notification ETS database to make it more efficient and implemented and ran a crawlerto migrate more than 2.5 Billion database records to transfer the data the new database. Throughout the internship, I wrote extensive unit and e2e tests using meck and Erlang's Common Test framework."
     },
     {
       "company": "MLH",

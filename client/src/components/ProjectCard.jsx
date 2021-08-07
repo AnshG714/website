@@ -6,12 +6,9 @@ function renderTechLogos(techImageNames) {
   return (
     <div className="tech-stack-container">
       {techImageNames.map((techImageName, index) => (
-        <img
-          key={index}
-          className="tech-logo"
-          src={require(`../assets/tech_logos/${techImageName}.png`)}
-          alt={techImageName}
-        />
+        <div key={index} className="tech-pill">
+          {techImageName}
+        </div>
       ))}
     </div>
   );

@@ -6,6 +6,7 @@ import Education from "./components/Education";
 import ProjectContainer from "./components/ProjectContainer";
 import ProfessionalExperienceContainer from "./components/ProfessionalExperienceContainer";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import * as data from "./data.json";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,6 +32,7 @@ function App() {
           </p>
           <Contact />
         </Section>
+        <Footer />
       </div>
     </>
   );

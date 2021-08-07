@@ -1,7 +1,5 @@
 .navbar {
   background-color: #060693;
-  position: sticky;
-  position: -webkit-sticky;
   width: 100%; /* Full width */
   top: 0px;
   left: 0;
